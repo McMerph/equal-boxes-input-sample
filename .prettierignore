@@ -2,4 +2,7 @@
 .cache/
 public
 
+# heroku files
+.heroku
+
 temp
