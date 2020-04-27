@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const REGEX = /^\d+$/;
-const DIGIT_WIDTH_IN_CH = 2;
+const DIGIT_WIDTH_IN_CH = 2.1;
 
 const Form = styled.form`
   margin: 1rem;
