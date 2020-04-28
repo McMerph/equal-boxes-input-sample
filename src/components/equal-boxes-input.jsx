@@ -55,13 +55,12 @@ const Button = styled.button`
 `;
 
 const EqualBoxesInput = ({ digitsNumber, fontSize = '2rem' }) => {
-  const inputRef = useRef(null);
   const buttonRef = useRef(null);
   const [value, setValue] = useState('');
   const done = value.length >= digitsNumber;
   useEffect(() => {
     if (done) {
-      inputRef.current.select();
+      document.getSelection().removeAllRanges();
       buttonRef.current.focus();
     }
   }, [value]);
@@ -91,7 +90,6 @@ const EqualBoxesInput = ({ digitsNumber, fontSize = '2rem' }) => {
           value={value}
           onChange={onChange}
           digits={digitsNumber}
-          ref={inputRef}
           onFocus={onFocus}
         />
         <Lines />
