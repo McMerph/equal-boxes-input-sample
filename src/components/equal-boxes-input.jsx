@@ -94,11 +94,7 @@ const EqualBoxesInput = ({ digitsNumber, fontSize = '2rem' }) => {
         />
         <Lines />
       </Wrapper>
-      <Button
-        type="submit"
-        ref={buttonRef}
-        disabled={value.length < digitsNumber}
-      >
+      <Button type="submit" ref={buttonRef} disabled={!done}>
         Print to console
       </Button>
     </Form>
