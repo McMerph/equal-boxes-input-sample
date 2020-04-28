@@ -67,7 +67,7 @@ const EqualBoxesInput = ({ digitsNumber, fontSize = '2rem' }) => {
   const onChange = (event) => {
     const { value: digits } = event.target;
     const sub = digits.substring(0, digitsNumber);
-    if (REGEX.test(sub)) {
+    if (REGEX.test(sub) || sub === '') {
       setValue(sub);
     }
   };
