@@ -20,7 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.21.0",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-styled-components": "^3.3.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
